@@ -19,7 +19,7 @@
 /////////////////////////////////////
 /////////////////////////////////////
 ///// VERSION 2
-// let apiQuotes = [];
+let apiQuotes = [];
 
 // Show New Quote
 function newQuote(min = 0, max = apiQuotes.length) {
