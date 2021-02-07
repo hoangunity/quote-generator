@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
@@ -11,9 +12,48 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23000000' fill-opacity='0.2'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
   color: #000;
   font-family: Montserrat, sans-serif;
-  font-weight: 700;
+  font-weight: 700; /* bold */
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 90rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 4.4rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 6.4rem;
+}
+
+.quote-author {
+  margin-top: 1.5rem;
+  font-size: 3.2rem;
+  font-weight: 400; /* normal */
+  font-style: italic;
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 1rem;
+  }
+
+  .quote-text {
+    font-size: 4rem;
+  }
 }
